@@ -1,0 +1,80 @@
+<div class="jumbotron bg-light py-5">
+  <div class="lead">
+    <p>
+      The product owner has decided to add a new
+      <strong>notebook feature</strong> to our application. We need your help
+      creating the notebook page and navigating to it.
+    </p>
+    <p>
+      In our first iteration of the notebook we only need the ability for a user
+      to load notes.
+    </p>
+    <p>
+      In our second iteration of notes we want to search for notes and be able
+      to delete them
+    </p>
+  </div>
+
+  <hr class="my-4" />
+
+  <p class="h4">Part 1</p>
+  <ul class="instructions">
+    <li>
+      Create a URL for the <code>NotebookComponent</code> page should be:
+      <code>/notebook</code>.
+    </li>
+    <li>
+      Place a link for user&#39;s to navigate to <code>/notebook</code> in the
+      template of the <code>HeaderComponent</code>.
+    </li>
+    <li>
+      Use the <code>NoteService</code> to load existing notes in the
+      <code>NotebookComponent</code>
+    </li>
+    <li>
+      Render a list of <code>NoteComponent</code> in the
+      <code>NotebookComponent</code> populating notes with text
+    </li>
+  </ul>
+
+  <p class="h4">Part 2</p>
+  <ul class="instructions">
+    <li>
+      <p>
+        Enable the <code>SearchComponent</code> to the
+        <code>NotebookComponent</code> and load notes based off the input string
+      </p>
+    </li>
+    <li>
+      <p>
+        Update the <code>NotebookComponent</code> to show "Searching.." while
+        it's loading
+      </p>
+    </li>
+    <li>
+      <p>Update the search to have a debounce of 250ms</p>
+    </li>
+    <li>
+      <p>
+        Update the <code>NoteComponent</code> to allow users to delete notes
+        using the <code>NoteService</code>
+      </p>
+    </li>
+  </ul>
+
+  <p class="h4">Part 3 - NGRX</p>
+  <ul class="instructions">
+    <li>
+      <p>
+        Convert the search to use the <code>loadNotes</code> action and wire it
+        up to work with the <code>NoteService</code>
+      </p>
+    </li>
+    <li>
+      <p>Update isLoading to pull the loading state from the store</p>
+    </li>
+    <li>
+      <p>Create a delete action to work with the <code>NoteService</code></p>
+    </li>
+  </ul>
+</div>

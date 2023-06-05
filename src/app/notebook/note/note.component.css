@@ -1,0 +1,10 @@
+.note {
+  display: inline-flex;
+  align-items: center;
+}
+
+.fa {
+  color: gray;
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
